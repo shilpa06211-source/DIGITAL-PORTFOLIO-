@@ -1,0 +1,200 @@
+Here is a simple portfolio template using HTML, CSS, and JavaScript in three separate files. It includes a background color, animation effects, and sections for About Me, Skills, and Projects.
+
+
+---
+
+✅ 1️⃣. index.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hemalatha S Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="animated-text">Hemalatha S - Web Developer</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Hemalatha S, a passionate web developer focused on building interactive and beautiful web applications using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Animation Effects</li>
+            <li>Problem Solving</li>
+            <li>Frontend Development</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">📱 Portfolio Website</div>
+            <div class="project-item">🛠️ Todo List App</div>
+            <div class="project-item">🎨 Interactive Gallery</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: Shilpa06211@gmail.com</p>
+        <p>© 2025 Hemalatha S</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+---
+
+✅ 2️⃣. style.css
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animated Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-size: 400% 400%;
+    animation: bgShift 20s ease infinite;
+    color: #fff;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.animated-text {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    animation: sectionFadeIn 1.5s ease;
+}
+
+@keyframes sectionFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+
+---
+
+✅ 3️⃣. script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('%cWelcome to Hemalatha S Portfolio!', 'color: #FFD700; font-size: 20px;');
+});
+
+
+---
+
+✅ Summary:
+
+Beautiful animated gradient background
+
+Smooth fade-in effects for header and sections
+
+Organized sections: About Me, Skills, Projects
+
+Footer with contact email (Shilpa06211@gmail.com)
+
+Simple JS console welcome message
+
+
+
+---
+
+📁 To use:
+
+1. Save as files:
+
+index.html
+
+style.css
+
+script.js
+
+
+
+2. Open index.html in your browser.
+
+
+
+👉 Let me know if you want me to add a contact form or social media links next.
+
